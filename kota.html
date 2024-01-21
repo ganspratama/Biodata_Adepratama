@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Ade Pratama</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- Plyr -->
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css">
+  <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
+
+  <!-- CSS kustom -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+      color: #495057;
+    }
+
+    section {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Profil Ade Pratama</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="loadContent('media.html')">Asal Sekolah</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+  <div class="container mt-5" id="content-container">
+    <!-- Konten akan dimuat di sini -->
+    <section>
+      <h2>Asal Kota</h2>
+      <p>
+        Selamat datang di halaman Asal Kota. Saya berasal dari Kisaran, sebuah kota kecil yang indah di Provinsi Sumatra Utara, Indonesia. Berikut beberapa informasi singkat mengenai Kota Kisaran:
+      </p>
+      <ul>
+        <li><strong>Nama Kota:</strong> Kisaran</li>
+        <li><strong>Provinsi:</strong> Sumatra Utara</li>
+        <li><strong>Luas Wilayah:</strong> 50 km<sup>2</sup></li>
+        <li><strong>Jumlah Penduduk:</strong> Sekitar 100,000 orang</li>
+      </ul>
+      <p>
+        Kisaran dikenal dengan keindahan alamnya dan keramahan penduduknya. Kota ini memiliki sejarah dan budaya yang kaya.
+      </p>
+    </section>
+  </div>
+
+  <footer class="text-center mt-5">
+    <p>&copy; Ade Pratama</p>
+  </footer>
+
+  <script>
+    function loadContent(page) {
+      $("#content-container").load(page);
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
